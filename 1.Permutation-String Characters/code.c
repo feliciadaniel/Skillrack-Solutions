@@ -13,9 +13,9 @@ void permute(char str[],int l,int r){
     printf("%s\n",str);
   else{
     for(int i= l;i<=r;i++){
-      swap(str,l,r);
+      swap(str,l,i);
       permute(str,l+1,r);
-      swap(str,l,r); //backtracking
+      swap(str,l,i); //backtracking
     }
   }
 }
